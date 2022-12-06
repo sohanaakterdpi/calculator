@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #111;
+}
+.container{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(119, 105, 105);
+    text-align: center;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 25px 25px 70px rgba(0, 0, 0, 0.5),
+                25px 25px 70px rgba(0, 0, 0, 0.5),
+                inset 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+.output{
+    width: 250px;
+    height: 45px;
+    text-align: end;
+    padding: 5px;
+    border-radius: 8px;
+    font-size: 30px;
+    border: none;
+}
+.all-btn{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.all-btn button{
+    width: 50px;
+    height: 50px;
+    margin: 6px;
+    border-radius: 50px;
+    border: none;
+    font-size: 26px;
+    font-weight: bold;
+    box-shadow: 25px 25px 70px rgba(0, 0, 0, 0.5),
+                25px 25px 70px rgba(0, 0, 0, 0.5),
+                inset 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+.all-btn button:active{
+    box-shadow: 0 0 10px aqua;
+}
+.all-btn .clr{
+    grid-column: span 2;
+    width: 110px;
+    background-color: rgb(210, 6, 6);
+}
+.all-btn .plus{
+    grid-row: span 2;
+    height: 110px;
+}
+.all-btn .eql{
+    background-color: rgb(100, 142, 16);
+}
